@@ -1,0 +1,62 @@
+{% extends 'header.html' %}
+
+{% block title %} Contact {% endblock %}
+
+{% block body %}
+
+    <section class="background-gray-lightest">
+      <div class="container">
+        <div class="breadcrumbs">
+          <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <h1 class="heading">Contact</h1>
+        <p class="lead">Get in contact with Fowler Pest Solutions  </p>
+      </div>
+    </section>
+    <section>  
+      <div id="contact" class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="box-simple">
+              <div class="icon"><i class="pe-7s-map-2"></i></div>
+              <h4 class="heading margin-bottom">Address</h4>
+              <p>274 Slocum St<br>Philadelphia, PA 19119<br>USA</p>
+            </div>
+            <div class="box-simple">
+              <div class="icon"><i class="pe-7s-phone"></i></div>
+              <h4 class="heading margin-bottom">Call</h4>
+              <p class="text-muted">This number is a toll free way to reach Fowler Pest Solutions</p>
+              <p><strong>+1 1-888-PEST-799</strong></p>
+            </div>
+            <div class="box-simple">
+              <div class="icon"><i class="pe-7s-mail-open"></i></div>
+              <h4 class="heading margin-bottom">Electronic support</h4>
+              <p class="text-muted">Please feel free to write an email to us</p>
+              <ul>
+                <li><strong><a href="mailto:nfowler@fowlerpests.com">Nathaniel Fowler</a></strong></li>
+             <li><strong><a href="mailto:mgalo@fowlerpests.com">Megan Galo</a></strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7 col-lg-offset-1">
+            <div class="icon"><i class="pe-7s-pen"></i></div>
+            <h4 class="heading margin-bottom">Contact form</h4>
+            <p class="text-muted">Drop us a line.</p>
+<form action="https://formspree.io/mgalo@fowlerpests.com"
+      method="POST">
+  <p>  <input type="text" class="form-control" name="name" placeholder="Your Name"></p>
+  <p> <input type="email" class="form-control" name="_replyto" placeholder="Your Email"></p> 
+    <p><textarea class="form-control" name="body" placeholder="Your Message"></textarea></p>
+    <p><input type="submit"  class="btn btn-primary" value="Send"></p>
+</form>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+   
+
+{% endblock %}
